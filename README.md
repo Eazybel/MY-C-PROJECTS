@@ -1,2 +1,2 @@
-# my-c-projects
-This is my second repository as a C developer.
+# MY-C-PROJECTS
+this is a tutorial for C dedicated to begginers
