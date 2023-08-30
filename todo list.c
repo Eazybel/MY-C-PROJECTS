@@ -8,16 +8,18 @@ int main() {
     char task[100];
     FILE *file;
 
-    while (1) {
+    
         printf("Welcome to Fast list:\n");
-        printf("Press 1 to preview last tasks, press 2 to add new, 3 to reset to default, 4 to exit:\n");
+        while (1) {
+        printf("Press 1 to preview last tasks, press 2 to add new, 3 to reset to default, 4 to exit:\n");   
         char choice = getch();
-
         switch (choice) {
             case '1':
                 file = fopen("test.txt", "r");
                 if (file == NULL) {
                     printf("There are no tasks to show.\n");
+                    sleep(2);
+                    system("cls");
                 } else {
                     int all;
                     while ((all = fgetc(file)) != EOF) {
