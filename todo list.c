@@ -32,7 +32,7 @@ int main() {
             case '2':
                 printf("Insert the title:\n");
                 fgets(title, sizeof(title), stdin);
-                file = fopen("test.txt", "w");
+                file = fopen("test.txt", "a");
                 fputs(title, file);
                 fclose(file);
 
