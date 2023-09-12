@@ -1,50 +1,56 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-#define CHAR VALUE = 1;
-struct contact
-{
-    char name[50];
-    char number[50];
-};
-
+#include<conio.h>
 int main()
+{ 
+    char choice;
+    char username[20];
+    char name[10];
+    char email[20];
+    char password[20];
+
+    printf("\t\t\tWELCOME TO Eazy CHAT\n");
+    printf("1. log in\n2. create new account\n3. forgot password\n");
+    printf("Enter your option:\n");
+   choice=getch();
+FILE *file;
+switch (choice)
 {
-printf("welcome to contact management\n");
-while (1)
-{
-    printf("1 for new contact:\n2 for show existing:\n");
-char value;
-value=getch();
+case '1':
+   printf("hello world");
+    break;
+case '2':
+printf("Enter Your Username: ");
+gets(username);
+file=fopen("eazy.txt","w");
+fprintf(file,"%s",username);
+fprintf(file,"\n",username);
+fclose(file);
 
+printf("Enter Your FullName: ");
+gets(name);
+file=fopen("eazy.txt","a");
+fprintf(file,"%s",name);
+fprintf(file,"\n",name);
+fclose(file);
 
+printf("Enter Your email: ");
+gets(email);
+file=fopen("eazy.txt","a");
+fprintf(file,"%s",email);
+fprintf(file,"\n",email);
+fclose(file);
 
-   if (value=='1')
-   {
-    struct contact first;
-
-   printf("name:\n");
-   fgets(first.name,sizeof(first.name),stdin);
-   strtok(first.name, "\n");
-   printf("numbers:\n");
-   scanf("%s",&first.number);
-   }else if (value=='2')
-   {
-    struct contact first;
-
-
-    printf("name:%s\n",first.name);
-    printf("number:%s\n",first.number);
-   }
-   
+printf("Enter Your password: ");
+gets(password);
+file=fopen("eazy.txt","a");
+fprintf(file,"%s",password);
+fclose(file);
+break;
+default:
+    break;
 }
 
-
-
-/*char name[50];
-printf("enter: \n");
-fgets(name,sizeof(name),stdin);
-printf("%s",name);
-*/
     return 0;
 }
