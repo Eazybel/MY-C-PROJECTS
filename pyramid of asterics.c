@@ -1,13 +1,20 @@
 #include <stdio.h>
-void main()
-{
-   int i,j,rows;
-   printf("Input number of rows : ");
-   scanf("%d",&rows);
-   for(i=1;i<=rows;i++)
-   {
-	for(j=1;j<=i;j++)
-	   printf("*");
-	printf("\n");
-   }
+
+int main() {
+    int numRows;
+
+    printf("Enter the number of rows for the pyramid: ");
+    scanf("%d", &numRows);
+
+    for (int i = 1; i <= numRows; i++) {
+        for (int j = 1; j <= numRows - i; j++) {
+            printf(" ");
+        }
+        for (int k = 1; k <= i; k++) {
+            printf("#");
+        }
+        printf("\n");
+    }
+
+    return 0;
 }
