@@ -1,43 +1,44 @@
 #include<stdio.h>
-int main()
+#include<string.h>
+#include<ctype.h>
+int main(int argc, char *argv[])
 {
-    int weeks=0;
-    int hours[12];
-    char value;
-    float average=0;
-    float sum=0;
-    int i;
-    printf("how many weeks did you took: ");
-    scanf("%i",&weeks);
-    for (i = 0; i <weeks; i++)
+    if (argc !=2)
     {
-       printf("how many hours in week %i: ",i);
-       scanf("%i",&hours[i]);
-       sum=sum+hours[i];
-       
-       
-       
+        printf("invalid input");
+        return 0;
     }
-    average=sum/weeks;
-do
+    
+for (int i = 0; i <strlen(argv); i++)
 {
-    printf("you want sum or average Enter the values with S or A: ");
-    scanf(" %c",&value);
-} while (value != 'A' && value != 'S');
 
-
-if (value=='A')
-{
-    printf("%.3f",average);
-}
-if (value=='S')
-{
-    printf("%.3f",sum);
-}
+    if (argv[1][i]=='a')
+    {
+        argv[1][i]='6';
+       
+        
+    }
+    else if (argv[1][i]=='e')
+    {
+        argv[1][i]='3';
+        
+        
+    }
+    else if (argv[1][i]=='i')
+    {
+        argv[1][i]='1';
+        
+        
+    }
+    else if (argv[1][i]=='o')
+    {
+        argv[1][i]='0';
+       
+        
+    }
 
     
-    
+}
+printf("%s\n",argv[1]);
     return 0;
 }
-
-
