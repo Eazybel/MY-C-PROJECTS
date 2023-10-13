@@ -37,12 +37,12 @@ int main()
     printf("Your password needs at least one uppercase letter, lowercase letter, number and symbol!\n");
    }
 
-if (upper!=0 && digit!=0 && lower!=0 && symbol!=0 && strlen(password) == 9)
+if (upper!=0 && digit!=0 && lower!=0 && symbol!=0 && strlen(password) == 8)
    {
     printf("Successful\n");
    }
 
-   if (strlen(password) != 9)
+   if (strlen(password) != 8)
    {
     printf("Your password needs to be 8 characters long");
    }
