@@ -1,14 +1,27 @@
 #include<stdio.h>
-int main()
+int plus(int sum);
+int main() {
+  int add=0;
+  int avg=0;
+  int zoo=plus(add);
+  
+   printf("the sum is %i\nthe average is %i ",zoo,zoo/10);
+ return 0;
+}
+int plus(int sum){
+
+
+for (int i = 1; i <=10; i++)
 {
-    char var[10];
-    printf("what is your name: ");
-    scanf("%s",&var);
-FILE *fptr;
-fptr=fopen("test.txt","a");
-fputs(var,fptr);
-fclose(fptr);
+  
+    int number[10];
+    printf("number: %i ",i);
+    scanf("%i",&number[i]);   
+    sum = sum+number[i];  
+    
+     
+}
 
+return sum;
 
-    return 0;
 }
