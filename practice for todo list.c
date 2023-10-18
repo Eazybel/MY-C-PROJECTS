@@ -1,27 +1,19 @@
 #include<stdio.h>
-int plus(int sum);
-int main() {
-  int add=0;
-  int avg=0;
-  int zoo=plus(add);
-  
-   printf("the sum is %i\nthe average is %i ",zoo,zoo/10);
- return 0;
-}
-int plus(int sum){
+#include<string.h>
+#include<ctype.h>
 
-
-for (int i = 1; i <=10; i++)
+ 
+int main()
 {
-  
-    int number[10];
-    printf("number: %i ",i);
-    scanf("%i",&number[i]);   
-    sum = sum+number[i];  
+  char word[1000];
+    printf("enter the number please\n");
+   gets(word)
+    toupper(word);
+    for (size_t i = 0; i < strlen(word); i++)
+    {
+      printf("%c",word[i]+1);
+    }
     
-     
-}
-
-return sum;
-
+    
+return 0;
 }
