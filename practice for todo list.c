@@ -7,7 +7,7 @@ int main()
 {
   char word[1000];
     printf("enter the number please\n");
-   gets(word)
+   gets(word);
     toupper(word);
     for (size_t i = 0; i < strlen(word); i++)
     {
