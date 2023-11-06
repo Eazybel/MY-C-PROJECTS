@@ -10,7 +10,7 @@ int sum(int a,int b){
     printf("player 2 wins with %i \n",b);
     return b;
    }
-   
+   return 0;
 }
 int main()
 {
