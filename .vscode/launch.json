@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ezedin/MY-C-PROJECTS/MY-C-PROJECTS",
-      "program": "c:/Users/Ezedin/MY-C-PROJECTS/MY-C-PROJECTS/build/Debug/outDebug",
+      "cwd": "c:/Users/Ezedin/MY-C-PROJECT/MY-C-PROJECTS",
+      "program": "c:/Users/Ezedin/MY-C-PROJECT/MY-C-PROJECTS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
