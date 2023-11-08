@@ -59,6 +59,7 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "stdbool.h": "c",
-    "algorithm": "c"
+    "algorithm": "c",
+    "typeinfo": "c"
   }
 }
